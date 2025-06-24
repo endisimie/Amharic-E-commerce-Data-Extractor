@@ -41,6 +41,36 @@ A subset of messages was labeled manually for **Named Entity Recognition (NER)**
 
 ---
 
+### ✅ Task 3: Fine-Tune Amharic NER Model
+- Used `Davlan/afro-xlmr-base` as a multilingual transformer model.
+- Data labeled in CoNLL format (`amharic_ner_sample.conll`).
+- Trained using HuggingFace’s `Trainer API`.
+- Final model metrics:
+  - **Precision**: ~0.81
+  - **Recall**: ~0.78
+  - **F1-Score**: ~0.79
+
+### ✅ Task 4: Model Comparison & Selection
+- Compared multiple multilingual models:
+  - `afro-xlmr-base`
+  - `bert-tiny-amharic` (restricted access)
+  - `xlm-roberta-base`
+- Evaluated on precision, recall, training time, and ability to handle Amharic.
+- Selected `afro-xlmr-base` as the final model for deployment.
+
+### ✅ Task 5: Model Interpretability
+- Implemented **LIME** to understand token-level NER predictions.
+- Applied **SHAP** to analyze entity importance distribution.
+- Results saved to `lime_interpretation.html` and SHAP text plots.
+
+### ✅ Task 6: Vendor Scorecard for Micro-Lending
+- Created a scoring engine based on:
+  - **Posting frequency**
+  - **Average views per post**
+  - **Average product price**
+  - **Top-performing post**
+- Designed a composite **Lending Score**:
+
 ## 🚀 How to Run
 
 1. **Clone the repository**

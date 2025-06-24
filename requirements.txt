@@ -1,3 +1,11 @@
 pandas
 telethon
 transformers
+datasets 
+seqeval
+accelerate
+evaluate
+matplotlib
+shap
+lime
+
